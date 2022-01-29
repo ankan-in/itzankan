@@ -4,7 +4,11 @@
     --fBN: 'Bebas Neue', cursive;
     --ubuntu: 'Ubuntu', sans-serif;
 }
+html {
+    font-size: 62.5%;
+}
 * {
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     outline: none;
@@ -12,7 +16,7 @@
 .container {
     background: rgb(94, 94, 94);
     height: 100vh;
-    width: 25%;
+    width: 20%;
     border-right: 2px solid white;
     position: fixed;
     /* display: flex;
@@ -20,24 +24,26 @@
 }
 body {
     background-color: #272727;
-    width: 75%;
+    width: 80%;
     height: 100%;
 }
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 10rem;
+    
+    
 }
 a {
     text-decoration: none;
 }
 .h1 {
-    margin: 10px 20px;
+    margin: 1rem 2rem;
     font-family: var(--ubuntu);
     color: rgb(228, 228, 228);
-    letter-spacing: 2px;
-    font-size: 75px;
+    letter-spacing: .2rem;
+    font-size: 5rem;
     user-select: none;
     cursor: pointer;
    
@@ -48,31 +54,34 @@ a {
 }
 
 .menu {
-    /* background-color: red; */
-    height: 500px;
+    
+    height: 48rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
+   margin-top: 5rem;
 }
 .btn {
-    margin: 20px;
-    height: 50px;
-    width: 150px;
+    margin: 2rem;
+    height: 5rem;
+    width: 15rem;
     font-family: var(--fBN);
-    letter-spacing: 2px;
-    font-size: 15px;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
     background: none;
     border: none;
     transition: 0.2s linear;
     overflow: hidden;
     color: white;
-    border: 2px black solid;
+    border: .2rem rgb(255, 255, 255) solid;
+    border-radius: 20px;
 }
 .btn:hover {
-    box-shadow: 0 0 20px cyan;
+    box-shadow: 0 0 2rem cyan;
     transition-delay: 0.1s;
     color: black;
+    border-color: black;
     background-color: cyan;
 }
 /* .bth1 {
@@ -103,20 +112,68 @@ a {
 .srch {
     background: none;
     border: none;
-    background-color: white;
-    margin-left: 1px;
-    height: 30px;
-    width: 30px;
+    background-color: rgb(255, 255, 255);
+    margin-left: .1rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
-    border: 2px solid black;
+    border: .2rem solid rgb(255, 255, 255);
     background: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s linear;
     
 }
+.srch:hover {
+    box-shadow: 0 0 2rem cyan;
+    
+    color: black;
+    border-color: black;
+    background-color: cyan;
+}
 .srch1 {
-    border: 2px solid black;
+    border: .2rem solid rgb(255, 255, 255);
     background: none;
-    color: rgb(151, 151, 151);
+    color: rgb(221, 221, 221);
     text-align: center;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+img {
+    font-family: var(--ubuntu);
+    color: white;
+    font-size: 2rem;
+}
+.footer {
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+.foot_copy {
+    text-align: center;
+    font-family: var(--fBN);
+    letter-spacing: .2rem;
+    font-weight: 10%;
+    user-select: none;
+}
+.icons   {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.icon {
+    color: 2white;
+    font-size: 2.5rem;
+    font-family: var(--ubuntu);
+    margin: 1rem;
+    color: white;
 }
 
 
@@ -124,9 +181,17 @@ a {
 
 
 
-
-
-
+@media(max-width:1000px) {
+    html {
+        font-size: 48%;
+    }
+    
+}
+@media(max-width:700px) {
+    html {
+        font-size: 44%;
+    }
+}
 
 
 
