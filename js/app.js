@@ -15,3 +15,11 @@ github.addEventListener('click', () => {
 twitter.addEventListener('click', () => {
     window.open("https://twitter.com/ankan_Q_Q","","height=700px,width=1000px;")
 });
+
+var home = document.querySelector('#home');
+home.addEventListener('click', () => {
+
+window.scrollTo(0,0);
+
+
+});

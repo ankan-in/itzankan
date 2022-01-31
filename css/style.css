@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root {
     --fBN: 'Bebas Neue', cursive;
     --ubuntu: 'Ubuntu', sans-serif;
+    --poppins: 'Poppins', sans-serif;
 }
 html {
     font-size: 62.5%;
+}
+body {
+    background-color: #55667e; 
+    height: 100%;
 }
 * {
     flex-wrap: wrap;
@@ -14,7 +20,7 @@ html {
     outline: none;
 }
 .container {
-    background: #1a1a1d;
+    background: #343F4F;
     height: 100vh;
     width: 30rem;
     border-right: 2px solid white;
@@ -24,8 +30,8 @@ html {
     flex-wrap: wrap; */
 }
 .main_body {
-    background-color: #4e4e50; 
-    height: 100vh;
+    background-color: #343F4F; 
+    height: 100%;
     width: 79.%; 
     margin-left: 30rem;
 }
@@ -61,7 +67,7 @@ a {
     align-items: center;
     flex-direction: column;
     width: 100%;
-   margin-top: 5rem;
+    margin-top: 5rem;
 }
 .btn {
     margin: 2rem;
@@ -177,23 +183,68 @@ img {
     color: white;
     cursor: pointer;
 }
-
-
-
-
-
-
-@media(max-width:1000px) {
-    html {
-        font-size: 48%;
-    }
+.home {
+    width: 100%;
+    background-color: rgba(226, 226, 226, 0.301);
+    height: 79.5rem;
+    display: flex;
+    flex-direction: column;
     
 }
-@media(max-width:700px) {
-    html {
-        font-size: 44%;
-    }
+.h1_1body {
+    color: rgb(255, 255, 255);
+    font-family: var(--ubuntu);
+    font-size: 6rem;
+    text-align: center;
+    font-style: italic;
+    user-select: none;
+    transform: translateY(300%);
 }
+.itz {
+    color: rgb(255, 83, 52);
+}
+.text {
+    align-self: center;
+    background-color: transparent;
+    width: 60rem;
+    height: 30rem;
+    transform: translateY(90%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    user-select: none;
+}
+.warper {
+    display: inline-flex;
+}
+.warper .static_text {
+    color: #fff;
+    font-size: 6rem;
+    font-family: var(--poppins);
+}
+.warper li {
+    list-style: none;
+    font-size: 6rem;
+    font-family: var(--poppins);
+    color: #FC6D6D;
+}
+.replaceing_text {
+    margin-left: 1.5rem;
+}
+.replaceing_text li span {
+    position: relative;
+}
+.replaceing_text li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: .2rem solid #FC6D6D;
+    animation: type 0.4s steps(9)
+}
+
+
 
 
 
