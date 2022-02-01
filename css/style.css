@@ -271,9 +271,125 @@ img {
 
     }
 }
+.soc_icon {
+    
+    height: 3rem;
+    width: 54rem;
+    transform: translate(50%,-1200%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.soci {
+    
+    margin-left: 3.4rem;
+    font-size: 2.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: 0.3s ease;
 
+  
+}
+.soci1 {
+    color: #FF0000;
+    border: 0.2rem solid rgb(255, 0, 0);
+    position: relative;
+}
 
+.soci2 {
+    color: #E1306C;
+    border: 0.2rem solid #E1306C;
+    position: relative;
+}
+.soci3 {
+    color: black;
+    border: 0.2rem solid #000000;
+    position: relative;
+}
+.soci4 {
+    color: #1DA1F2;
+    border: 0.2rem solid #1DA1F2;
+    position: relative;
+}
+.soci1:hover {
+    color: white;
+}
+.soci2:hover {
+    color: white; 
+}
+.soci3:hover {
+    color: white; 
+}
+.soci4:hover {
+    color: white;
+}
+ .soci1::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    transform: scale(0);
+    transition: 0.2s linear;
+    border-radius: 50%;
+    z-index: -1;
+} 
+.soci1:hover::before {
+    transform: scale(100%);
+}
 
-
-
+.soci2::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #E1306C;
+    transform: scale(0);
+    transition: 0.2s linear;
+    border-radius: 50%;
+    z-index: -1;
+} 
+.soci2:hover::before {
+    transform: scale(100%);
+}.soci3::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #000000;
+    transform: scale(0);
+    transition: 0.2s linear;
+    border-radius: 50%;
+    z-index: -1;
+} 
+.soci3:hover::before {
+    transform: scale(100%);
+}
+.soci4::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #1DA1F2;
+    transform: scale(0);
+    transition: 0.2s linear;
+    border-radius: 50%;
+    z-index: -1;
+} 
+.soci4:hover::before {
+    transform: scale(100%);
+}
