@@ -393,3 +393,11 @@ img {
 .soci4:hover::before {
     transform: scale(100%);
 }
+.aboutme {
+    height: 70rem;
+    background-color: rgb(235, 235, 235);
+        margin-left: 30rem;
+        display: flex;
+       
+       
+}
