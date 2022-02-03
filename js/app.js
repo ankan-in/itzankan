@@ -59,3 +59,6 @@ twitter1.addEventListener('click', () => {
     window.open("https://twitter.com/ankan_Q_Q","");
 });
 
+function scrl() {
+    window.scrollTo(0,620);
+}
