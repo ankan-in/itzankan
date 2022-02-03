@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+:root {
+    --yellowtails: 'Yellowtail', cursive;
+    --fBN: 'Bebas Neue', cursive;
+    --ubuntu: 'Ubuntu', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+.scrolldown {
+    height: 7rem;
+    width: 5rem;
+    background-color: transparent;
+     margin-left: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    transform: translateY(-35%);
+}
+.scrld {
+    height: 6rem;
+    width: 3rem;
+    border-radius: 5rem;
+    border: .2rem solid rgb(255, 255, 255);
+    position: relative;
+}
+.scrld::after,
+.scrld::before {
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 50%;
+   border: .2rem rgb(255, 255, 255) solid;
+   height: 10px;
+   width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrld 1s ease-in-out infinite;
+}
+.scrld::after {
+    top: 30%;
+    animation-delay: .3s;
+}
+@keyframes scrld {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+}
+.vid {
+    margin-left: 30rem;
+    background-color: #ebebeb;
+    height: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainvod {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+.iframe1 {
+    margin-top: .5rem;
+    border-radius: 4rem;
+}
+.hr_vod {
+    font-family: var(--yellowtails);
+    user-select: none;
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+.disvod {
+    height: 35rem;
+    width: 60rem;
+    border-radius: 3rem;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.iframe_2 {
+    height: 20rem;
+    width: 32rem;
+    border-radius: 4rem
+}
+.othvod {
+    display: flex;
+    flex-direction: row;
+    height: 25rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5rem;
+    
+    background-color: rgb(167, 167, 167);
+}

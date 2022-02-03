@@ -24,6 +24,13 @@ window.scrollTo(0,0);
 
 
 });
+var abt = document.querySelector('#about');
+abt.addEventListener('click', () => {
+
+window.scrollTo(0,620);
+
+
+});
 
 //main icon
 
@@ -45,10 +52,3 @@ twitter1.addEventListener('click', () => {
     window.open("https://twitter.com/ankan_Q_Q","");
 });
 
-var home = document.querySelector('#home');
-home.addEventListener('click', () => {
-
-window.scrollTo(0,0);
-
-
-});

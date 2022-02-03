@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root {
     --fBN: 'Bebas Neue', cursive;
     --ubuntu: 'Ubuntu', sans-serif;
     --poppins: 'Poppins', sans-serif;
+    --yellowtails: 'Yellowtail', cursive;
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
-    background-color: #55667e; 
+    /* background-color: #55667e;  */
     height: 100%;
 }
 * {
@@ -62,12 +65,14 @@ a {
 
 .menu {
     
-    height: 48rem;
+    height: 43rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     margin-top: 5rem;
+    
 }
 .btn {
     margin: 2rem;
@@ -186,7 +191,7 @@ img {
 .home {
     width: 100%;
     /* background-color: rgba(226, 226, 226, 0.301); */
-    height: 79.5rem;
+    height: 60rem;
     display: flex;
     flex-direction: column;
     
@@ -198,7 +203,7 @@ img {
     text-align: center;
     font-style: italic;
     user-select: none;
-    transform: translateY(300%);
+    transform: translateY(100%);
 }
 .itz {
     color: rgb(255, 83, 52);
@@ -208,7 +213,7 @@ img {
     background-color: transparent;
     width: 60rem;
     height: 30rem;
-    transform: translateY(50%);
+    transform: translateY(15%);
     display: flex;
     justify-content: center;
     align-content: center;
@@ -275,7 +280,7 @@ img {
     
     height: 3rem;
     width: 54rem;
-    transform: translate(50%,-1200%);
+    transform: translate(40%,-600%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,7 +402,17 @@ img {
     height: 70rem;
     background-color: rgb(235, 235, 235);
         margin-left: 30rem;
-        display: flex;
+        
        
-       
+}
+.hr_abt {
+    font-family: var(--yellowtails);
+    user-select: none;
+    font-size: 5rem;
+    text-align: center;
+    
+}
+.abttext {
+    height: 5.4rem;
+  
 }
