@@ -31,6 +31,13 @@ window.scrollTo(0,620);
 
 
 });
+var vod = document.querySelector('#videos');
+vod.addEventListener('click', () => {
+
+window.scrollTo(0,1500);
+
+
+});
 
 //main icon
 
